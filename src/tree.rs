@@ -381,7 +381,6 @@ impl<Pane> Tree<Pane> {
         let enabled = ui.is_enabled();
         let mut ui = egui::Ui::new(
             ui.ctx().clone(),
-            ui.layer_id(),
             ui.id().with(tile_id),
             egui::UiBuilder::new().max_rect(rect),
         );
